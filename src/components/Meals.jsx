@@ -6,7 +6,7 @@ import Error from '../ui/Error.jsx';
 const requestConfig = {};
 
 function Meals() {
-  const {data: meals, isLoading, error} = useHttp('http://localhost:3000/meals', requestConfig, []);
+  const {data: meals, isLoading, error} = useHttp('https://food-app-ftf9.onrender.com/meals', requestConfig, []);
 
   if(isLoading) {
     return <p className='center'>Fetching...</p>;
