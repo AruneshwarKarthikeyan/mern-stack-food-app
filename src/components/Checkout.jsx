@@ -28,7 +28,7 @@ function Checkout() {
     error,
     sendRequest,
     clearData,
-  } = useHttp("http://localhost:3000/orders", requestConfig);
+  } = useHttp("https://food-app-ftf9.onrender.com/orders", requestConfig);
 
   const handleClose = () => {
     userProgressCtx.hideCheckout();
